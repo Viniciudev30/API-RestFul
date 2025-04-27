@@ -19,7 +19,7 @@ public class Medico {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-     String nome;
+    private String nome;
     private String email;
     private String telefone;
     private String crm;
