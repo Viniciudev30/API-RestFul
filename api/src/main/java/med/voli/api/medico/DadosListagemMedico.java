@@ -1,9 +1,9 @@
 package med.voli.api.medico;
 
 
-public record DadosListagemMedico (Long Id,String nome,String email, String crm, Especialidade especialidade) {
+public record DadosListagemMedico(Long Id, String nome, String email, String crm, Especialidade especialidade) {
 
-    public DadosListagemMedico(Medico medico){
+    public DadosListagemMedico(Medico medico) {
         this(medico.getId(),
                 medico.getNome(),
                 medico.getEmail(),
