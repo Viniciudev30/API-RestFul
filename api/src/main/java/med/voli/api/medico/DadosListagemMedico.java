@@ -1,7 +1,9 @@
 package med.voli.api.medico;
 
 
-public record DadosListagemMedico(Long Id, String nome, String email, String crm, Especialidade especialidade) {
+import org.springframework.data.domain.Page;
+
+public record DadosListagemMedico(Long Id, String nome, String email, String crm, Especialidade especialidade)  {
 
     public DadosListagemMedico(Medico medico) {
         this(medico.getId(),
