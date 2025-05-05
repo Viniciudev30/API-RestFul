@@ -13,7 +13,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity(name = "usuarios")
-@Table(name = "Usuario")
+@Table(name = "usuarios")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -33,7 +33,7 @@ public class Usuario implements UserDetails {
 
     @Override
     public String getPassword() {
-        return senha;
+        return senha.trim();
     }
 
     @Override
