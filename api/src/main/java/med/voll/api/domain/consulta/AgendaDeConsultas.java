@@ -18,6 +18,7 @@ public class AgendaDeConsultas {
     @Autowired
     private MedicoRepository medicoRepository;
 
+    @Autowired
     private PacienteRepository pacienteRepository;
 
     public void agendar(DadosAgendamentoConsulta dados){
